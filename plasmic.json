@@ -1,0 +1,142 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
+      "projectApiToken": "uZp069FLSLNVA2dpWnqC3BUaj3flvtNBNXt6e1b67rm4Uh6lGHgYJ65FCBXlOFTB5KDW7RmmOxIAzgHYCg",
+      "projectName": "plasmic-nav",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_nav/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "jGx9tiKJoex",
+          "name": "NavigationBar",
+          "displayName": "hostless-plasmic-navigation-bar",
+          "componentImportPath": "@plasmicpkgs/plasmic-nav"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "rDy6Bf3bBGkjq3csNVFqdD",
+      "projectApiToken": "uBxgKxwheYUERXuJYhu1qh26aldtGJuL2019asMqp2dNs9HSvft5lFl3dMpDFrPobvoVHrHP8xcuGe3KwbA",
+      "projectName": "otanfun",
+      "version": "latest",
+      "cssFilePath": "plasmic/otanfun/plasmic.module.css",
+      "components": [
+        {
+          "id": "oG-9p2rwqY7J",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "rDy6Bf3bBGkjq3csNVFqdD",
+          "renderModuleFilePath": "plasmic/otanfun/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/otanfun/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/"
+        }
+      ],
+      "icons": [],
+      "images": [
+        {
+          "id": "S_3S1isobP16",
+          "name": "otanlambo.png",
+          "filePath": "../public/plasmic/otanfun/images/otanlamboPng.png"
+        },
+        {
+          "id": "N8svptczwtz9",
+          "name": "openart-image_XQSkKRnO_1735208744256_raw (1).jpg",
+          "filePath": "../public/plasmic/otanfun/images/openartImageXqSkKRnO1735208744256Raw1Jpg.jpg"
+        },
+        {
+          "id": "y88cwFttoXAi",
+          "name": "img1.png",
+          "filePath": "../public/plasmic/otanfun/images/img1Png.png"
+        },
+        {
+          "id": "ywNQBmAy5bT2",
+          "name": "img2.png",
+          "filePath": "../public/plasmic/otanfun/images/img2Png.png"
+        },
+        {
+          "id": "FdYDAQc0M-4Y",
+          "name": "img3.png",
+          "filePath": "../public/plasmic/otanfun/images/img3Png.png"
+        },
+        {
+          "id": "KJcjcUmlcp5c",
+          "name": "img4.png",
+          "filePath": "../public/plasmic/otanfun/images/img4Png.png"
+        },
+        {
+          "id": "ubMls6IQGVlu",
+          "name": "otanface-logo.png",
+          "filePath": "../public/plasmic/otanfun/images/otanfaceLogoPng.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "JNsNt_75nrdS",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "sZRHqc5PlJXo",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "GFuor_iF4Hd6",
+        "name": "Screen",
+        "projectId": "rDy6Bf3bBGkjq3csNVFqdD",
+        "contextFilePath": "plasmic/otanfun/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.334",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.334/dist/plasmic.schema.json"
+}
