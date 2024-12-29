@@ -293,7 +293,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 )}
               >
                 {
-                  "From the jungle to the city, now we living in style\n\nCrypto changed the game, got us stacking that pile\nSport cars, bright lights, we shining so high\n\nEven Otan\u2019s rocking diamonds, under the sky"
+                  "From the jungle to the city, now we living in style. Crypto changed the game, got us stacking that pile\nSport. cars, bright lights, we shining so high.\nEven Otan\u2019s rocking diamonds, under the sky"
                 }
               </div>
             </div>
@@ -311,7 +311,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"250px"}
+                  displayWidth={"150px"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/otanfun/images/img1Png.png",
@@ -329,7 +329,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"250px"}
+                  displayWidth={"150px"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/otanfun/images/img2Png.png",
@@ -347,7 +347,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"250px"}
+                  displayWidth={"150px"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/otanfun/images/img3Png.png",
@@ -365,7 +365,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"250px"}
+                  displayWidth={"150px"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/otanfun/images/img4Png.png",
