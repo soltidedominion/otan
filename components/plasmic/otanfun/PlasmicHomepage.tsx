@@ -60,6 +60,7 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
+import { PlasmicHead } from "@plasmicapp/react-web";
 
 import { useScreenVariants as useScreenVariantsgFuorIF4Hd6 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: GFuor_iF4Hd6/globalVariant
 
@@ -82,6 +83,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   navigationBar?: Flex__<typeof NavigationBar>;
+  pageMetadataOverride?: Flex__<typeof PlasmicHead>;
 };
 
 export interface DefaultHomepageProps {}
@@ -291,7 +293,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 )}
               >
                 {
-                  "From the jungle to the city, now we living in style\nCrypto changed the game, got us stacking that pile\nSport cars, bright lights, we shining so high\nEven Otan\u2019s rocking diamonds, under the sky"
+                  "From the jungle to the city, now we living in style\n\nCrypto changed the game, got us stacking that pile\nSport cars, bright lights, we shining so high\n\nEven Otan\u2019s rocking diamonds, under the sky"
                 }
               </div>
             </div>
@@ -375,6 +377,14 @@ function PlasmicHomepage__RenderFunc(props: {
               </Stack__>
             </div>
           </div>
+          <PlasmicHead
+            data-plasmic-name={"pageMetadataOverride"}
+            data-plasmic-override={overrides.pageMetadataOverride}
+            className={classNames("__wab_instance", sty.pageMetadataOverride)}
+            description={"Swung from the jungle, now we run the game!"}
+            image={"/plasmic/otanfun/images/img4Png.png"}
+            title={"Otan Fun on Solana"}
+          />
         </div>
       </div>
     </React.Fragment>
@@ -382,8 +392,9 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navigationBar"],
-  navigationBar: ["navigationBar"]
+  root: ["root", "navigationBar", "pageMetadataOverride"],
+  navigationBar: ["navigationBar"],
+  pageMetadataOverride: ["pageMetadataOverride"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -391,6 +402,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   navigationBar: typeof NavigationBar;
+  pageMetadataOverride: typeof PlasmicHead;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -454,6 +466,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     navigationBar: makeNodeComponent("navigationBar"),
+    pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
